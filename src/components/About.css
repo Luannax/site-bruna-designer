@@ -1,0 +1,165 @@
+.about {
+  background: var(--accent);
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--gradient);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-icon {
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.about-experience {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: var(--white);
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience-text {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.about-text strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 568px) {
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-experience {
+    bottom: 15px;
+    right: 15px;
+    padding: 15px 20px;
+  }
+
+  .experience-number {
+    font-size: 1.8rem;
+  }
+
+  .experience-text {
+    font-size: 0.75rem;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+}

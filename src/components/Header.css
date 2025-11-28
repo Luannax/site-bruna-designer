@@ -1,0 +1,155 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--white);
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow);
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.logo-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 568px) {
+  .logo-name {
+    font-size: 1.4rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.65rem;
+  }
+}
+
+.logo-tagline {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.nav-mobile-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--accent);
+  transition: color 0.3s ease;
+}
+
+.nav-mobile-link:hover {
+  color: var(--primary);
+}
+
+.nav-mobile-social {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.nav-mobile-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.nav-mobile-social a:hover {
+  background: var(--gradient);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 968px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+}
