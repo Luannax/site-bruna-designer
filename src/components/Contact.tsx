@@ -13,10 +13,27 @@ const Contact = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // Aqui você pode integrar com um serviço de envio de email ou WhatsApp
-    const whatsappMessage = `Olá! Meu nome é ${formData.name}. ${formData.message}`;
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Monta mensagem completa com todos os dados do formulário
+    const whatsappMessage = `*Novo Contato pelo Site* 📩
+
+*Nome:* ${formData.name}
+*Email:* ${formData.email}
+*Telefone:* ${formData.phone}
+
+*Mensagem:*
+${formData.message}`;
+
+    const whatsappUrl = `https://wa.me/5565999332213?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
+    
+    // Limpa o formulário após enviar
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
   };
 
   return (

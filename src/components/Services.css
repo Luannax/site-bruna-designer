@@ -6,13 +6,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-}
-
-@media (max-width: 640px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  width: 100%;
 }
 
 .service-card {
@@ -87,6 +81,18 @@
   gap: 10px;
 }
 
+/* Media Queries - do maior para o menor */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .service-card {
+    padding: 35px 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
@@ -98,5 +104,121 @@
 
   .service-title {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+    word-wrap: break-word;
+  }
+
+  .service-price {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 25px 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .service-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .service-title {
+    font-size: 1.15rem;
+    word-wrap: break-word;
+  }
+
+  .service-description {
+    font-size: 0.88rem;
+  }
+
+  .service-price {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .services {
+    overflow-x: hidden;
+  }
+
+  .services .container {
+    padding: 0 10px !important;
+  }
+
+  .services-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .service-card {
+    padding: 16px 10px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    border-radius: 15px !important;
+  }
+
+  .service-icon {
+    width: 52px !important;
+    height: 52px !important;
+    margin-bottom: 12px !important;
+    border-radius: 15px !important;
+  }
+
+  .service-title {
+    font-size: 0.95rem !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 8px !important;
+  }
+
+  .service-description {
+    font-size: 0.78rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .service-price {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .service-link {
+    font-size: 0.8rem !important;
   }
 }

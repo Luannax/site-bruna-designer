@@ -87,4 +87,30 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+
+  .testimonial-comment {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .testimonial-card {
+    padding: 25px 18px;
+  }
+
+  .testimonial-comment {
+    font-size: 0.9rem;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-role {
+    font-size: 0.85rem;
+  }
 }

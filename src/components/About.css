@@ -136,30 +136,166 @@
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 992px) {
+  .about-wrapper {
+    gap: 50px;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-image-placeholder {
+    aspect-ratio: 16/10;
+  }
+
   .about-text {
     font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .about-experience {
     bottom: 15px;
     right: 15px;
-    padding: 15px 20px;
+    padding: 18px 22px;
   }
 
   .experience-number {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .experience-text {
     font-size: 0.75rem;
   }
+}
+
+@media (max-width: 568px) {
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .about-experience {
+    bottom: 12px;
+    right: 12px;
+    padding: 12px 18px;
+  }
+
+  .experience-number {
+    font-size: 1.6rem;
+  }
+
+  .experience-text {
+    font-size: 0.7rem;
+  }
 
   .feature-item {
-    padding: 15px;
+    padding: 15px 12px;
+  }
+
+  .feature-icon {
+    width: 45px;
+    height: 45px;
   }
 
   .feature-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .feature-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .experience-number {
+    font-size: 1.4rem;
+  }
+
+  .feature-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .about-wrapper {
+    gap: 25px;
+  }
+
+  .about-image-placeholder {
+    aspect-ratio: 1;
+    border-radius: 20px;
+  }
+
+  .about-text {
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+
+  .about-experience {
+    bottom: 8px;
+    right: 8px;
+    padding: 8px 12px;
+    border-radius: 12px;
+  }
+
+  .experience-number {
+    font-size: 1.2rem;
+  }
+
+  .experience-text {
+    font-size: 0.6rem;
+  }
+
+  .about-features {
+    gap: 12px;
+  }
+
+  .feature-item {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .feature-title {
+    font-size: 0.85rem;
+    margin-bottom: 3px;
+  }
+
+  .feature-description {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

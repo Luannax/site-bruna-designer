@@ -85,7 +85,7 @@ const About = () => {
             </div>
 
             <a href="#contact" className="btn btn-primary">
-              Agendar Consulta
+              Agendar Horário
             </a>
           </motion.div>
         </div>
