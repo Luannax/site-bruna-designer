@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import brunaHeroImg from '../assets/Perfil.JPG';
+import brunaHeroImg from '../assets/Perfil.jpg';
 import './Hero.css';
 
 const Hero = () => {
