@@ -1,37 +1,29 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Instagram, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Send, User } from 'lucide-react';
 import { useState, type FormEvent } from 'react';
 import './Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    phone: '',
     message: '',
   });
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     
-    // Monta mensagem completa com todos os dados do formulário
-    const whatsappMessage = `*Novo Contato pelo Site* 📩
+    const whatsappMessage = `*Contato recebido pelo site Bruna Jessen*
 
 *Nome:* ${formData.name}
-*Email:* ${formData.email}
-*Telefone:* ${formData.phone}
 
 *Mensagem:*
 ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/5565999332213?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/556547991294328?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     
-    // Limpa o formulário após enviar
     setFormData({
       name: '',
-      email: '',
-      phone: '',
       message: '',
     });
   };
@@ -71,7 +63,7 @@ ${formData.message}`;
                 </div>
                 <div>
                   <h4>Telefone</h4>
-                  <p>(11) 99999-9999</p>
+                  <p>(47) 9 9129-4328</p>
                 </div>
               </div>
 
@@ -103,6 +95,7 @@ ${formData.message}`;
                   <h4>Horário de Atendimento</h4>
                   <p>Seg - Sex: 9h às 18h</p>
                   <p>Sáb: 9h às 14h</p>
+                  <p style={{ marginTop: '6px', fontWeight: 600 }}>Atendimento somente com horário agendado</p>
                 </div>
               </div>
             </div>
@@ -124,6 +117,12 @@ ${formData.message}`;
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
+            <div className="form-header">
+              <div className="form-icon">
+                <User size={35} />
+              </div>
+            </div>
+
             <div className="form-group">
               <label htmlFor="name">Nome Completo</label>
               <input
@@ -133,30 +132,6 @@ ${formData.message}`;
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
                 placeholder="Seu nome"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-                placeholder="seu@email.com"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="phone">Telefone</label>
-              <input
-                type="tel"
-                id="phone"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                required
-                placeholder="(11) 99999-9999"
               />
             </div>
 

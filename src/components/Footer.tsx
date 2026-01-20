@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/brunajessen_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="tel:+5511999999999" aria-label="Telefone">
+              <a href="tel:+5547991294328" aria-label="Telefone">
                 <Phone size={20} />
               </a>
               <a href="mailto:contato@brunadesign.com" aria-label="Email">
@@ -47,10 +47,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-title">Serviços</h4>
             <ul className="footer-links">
-              <li><a href="#services">Design de Sobrancelhas</a></li>
-              <li><a href="#services">Micropigmentação</a></li>
-              <li><a href="#services">Henna</a></li>
-              <li><a href="#services">Manutenção</a></li>
+              <li><a href="#services">Design Personalizado</a></li>
+              <li><a href="#services">Design com Henna</a></li>
+              <li><a href="#services">Design com Coloração</a></li>
+              <li><a href="#services">Brow Lamination</a></li>
             </ul>
           </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <Phone size={16} />
-                <span>(11) 99999-9999</span>
+                <span>(47) 9 9129-4328</span>
               </li>
               <li>
                 <Mail size={16} />

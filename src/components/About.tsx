@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, Users, Heart, TrendingUp } from 'lucide-react';
 import './About.css';
+import perfil from '../assets/Perfil.JPG';
 
 const About = () => {
   const features = [
@@ -11,7 +12,7 @@ const About = () => {
     },
     {
       icon: <Users size={24} />,
-      title: '500+ Clientes',
+      title: '+1000 Clientes',
       description: 'Centenas de clientes satisfeitas e fidelizadas',
     },
     {
@@ -38,7 +39,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="about-image-placeholder">
-              <Heart size={60} className="about-icon" />
+              <img src={perfil} alt="Bruna Jessen" className="about-photo" loading="lazy" />
             </div>
             <div className="about-experience">
               <span className="experience-number">5+</span>

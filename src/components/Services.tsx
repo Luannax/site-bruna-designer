@@ -1,32 +1,32 @@
 import { motion } from 'framer-motion';
-import { Scissors, Sparkles, Eye, Clock } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
   const services = [
     {
-      icon: <Scissors size={32} />,
-      title: 'Design de Sobrancelhas',
-      description: 'Técnica personalizada para desenhar e modelar suas sobrancelhas de acordo com seu formato de rosto.',
-      price: 'R$ 80',
+      icon: <Sparkles size={25} />,
+      title: 'Design Personalizado',
+      description: 'Técnica personalizada de design para harmonizar e valorizar suas sobrancelhas de forma natural.',
+      price: 'R$ 60,00',
     },
     {
-      icon: <Sparkles size={32} />,
-      title: 'Micropigmentação',
-      description: 'Preenchimento natural e duradouro com pigmentos de alta qualidade para sobrancelhas perfeitas.',
-      price: 'R$ 350',
+      icon: <Sparkles size={25} />,
+      title: 'Design com Henna',
+      description: 'Coloração com henna que preenche as falhas e traz mais volume as sobrancelhas.',
+      price: 'R$ 70,00',
     },
     {
-      icon: <Eye size={32} />,
-      title: 'Henna',
-      description: 'Coloração natural com henna para dar mais volume e cor às suas sobrancelhas.',
-      price: 'R$ 60',
+      icon: <Sparkles size={25} />,
+      title: 'Design com Coloração',
+      description: 'Coloração com tintura que traz cor, volume e preenchimento as sobrancelhas de forma mais natural, a tintura no pelo pode durar até 30 dias.',
+      price: 'R$ 80,00',
     },
     {
-      icon: <Clock size={32} />,
-      title: 'Manutenção',
-      description: 'Mantenha suas sobrancelhas sempre impecáveis com nosso serviço de manutenção periódica.',
-      price: 'R$ 50',
+      icon: <Sparkles size={25} />,
+      title: 'Brow Lamination',
+      description: 'Técnica de alinhamento dos fios onde conseguimos preencher pequenas falhas, alinhar assimetrias, trazer mais volume e preenchimento as sobrancelhas. Resultados naturais valorizando os seus traços únicos.',
+      price: 'R$ 160,00',
     },
   ];
 

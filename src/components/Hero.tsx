@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import brunaHeroImg from '../assets/bruna-hero.png';
+import brunaHeroImg from '../assets/Perfil.JPG';
 import './Hero.css';
 
 const Hero = () => {
@@ -64,12 +64,12 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <div className="stat">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">+1000</span>
               <span className="stat-label">Clientes Satisfeitas</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">5+</span>
+              <span className="stat-number">+5</span>
               <span className="stat-label">Anos de Experiência</span>
             </div>
             <div className="stat-divider"></div>
