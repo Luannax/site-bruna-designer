@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, Users, Heart, TrendingUp } from 'lucide-react';
 import './About.css';
-import perfil from '../assets/Perfil.JPG';
+import perfil from '../assets/Perfil.jpg';
 
 const About = () => {
   const features = [
