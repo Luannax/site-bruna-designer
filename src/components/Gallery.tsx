@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import './Gallery.css';
-import foto1 from '../assets/foto1.JPG';
-import foto2 from '../assets/foto2.JPG';
-import foto3 from '../assets/foto3.JPG';
+import foto1 from '../assets/foto1.jpg';
+import foto2 from '../assets/foto2.jpg';
+import foto3 from '../assets/foto3.jpg';
 import foto4 from '../assets/foto4.jpg';
-import foto5 from '../assets/foto5.JPG';
-import foto6 from '../assets/foto6.JPG';
+import foto5 from '../assets/foto5.jpg';
+import foto6 from '../assets/foto6.jpg';
 
 const Gallery = () => {
   const profileUrl = 'https://www.instagram.com/brunajessen_/';
