@@ -3,7 +3,6 @@ import './Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   return (
     <footer className="footer">
       <div className="container">
@@ -36,7 +35,7 @@ const Footer = () => {
             <h4 className="footer-title">Navegação</h4>
             <ul className="footer-links">
               <li><a href="#home">Início</a></li>
-              <li><a href="#services">Serviços</a></li>
+              <li><a href="#services">Serviços</a></li>   
               <li><a href="#gallery">Galeria</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#testimonials">Depoimentos</a></li>
